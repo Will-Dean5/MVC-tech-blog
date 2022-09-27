@@ -7,6 +7,7 @@ const restart = async () =>{
 
     await User.bulkCreate(reset, {
         returning: true,
+        indivdualHooks: true,
     });
     console.log("Table reset")
     process.exit(0);
