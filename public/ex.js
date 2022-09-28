@@ -4,12 +4,7 @@ const subBtn = document.querySelector('submit');
 
 async function block(event) {
   event.preventDefault();
-  if(newPost.classList.contains("silent")){
-  newPost.classList.remove("silent");
-  }
-  else{
-      newPost.classList.add("silent");
-  }
+  
 };
 
 async function formhandle(event) {
@@ -26,7 +21,7 @@ async function formhandle(event) {
       "Content-Type": "application/json",
     },
   });
-  if(response.ok) {
+  if(aw.ok) {
     document.location.replace('/dashboard');
   } else {
     window.alert("Did not post");
