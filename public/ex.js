@@ -1,6 +1,6 @@
-const newBtn = document.querySelector('newButton');
-const post = document.querySelector('newPost');
-const subBtn = document.querySelector('submit');
+const newBtn = document.querySelector('#newButton');
+const post = document.querySelector('#newPost');
+const subBtn = document.querySelector('#submit');
 
 async function block(event) {
   event.preventDefault();
