@@ -1,5 +1,3 @@
-const { response } = require('express');
-
 const newBtn = document.querySelector('newButton');
 const post = document.querySelector('newPost');
 const subBtn = document.querySelector('submit');
