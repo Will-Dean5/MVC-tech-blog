@@ -1,7 +1,7 @@
-const posts = require("express").Router();
-const models = require("../../models");
+const posts = require('express').Router();
+const models = require('../../models');
 
-posts.get("/", async (req, res) =>{
+posts.get('/', async (req, res) =>{
     try{
       const data = await models.Post.findAll();
       res.status(200).json(data);
@@ -12,7 +12,7 @@ posts.get("/", async (req, res) =>{
     }
 });
 
-posts.post("/", async(req, res) =>{
+posts.post('/', async(req, res) =>{
     try{
         const data = await models.Post.create({
             title: req.body.title,
